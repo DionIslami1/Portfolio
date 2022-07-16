@@ -33,12 +33,12 @@ function NavBar() {
                 </label>
                 <p>Dark Mode</p>
             </div>
-            <div className="navbar-logo" />
+            <Link to='App' className="navbar-logo" smooth={true} duration={2000} />
             <div className="links">
-                <Link to='#' className="inner-links"> <AiFillHome className="links-svg" />Home</Link>
-                <Link to='#' className="inner-links"> <BsPersonLinesFill className="links-svg" /> About</Link>
-                <Link to='#' className="inner-links"> <AiFillProject className="links-svg" /> Projects</Link>
-                <Link to='#' className="inner-links"> <RiContactsBookFill className="links-svg" /> Contact</Link>
+                <Link to='header' className="inner-links" smooth={true} duration={1000}> <AiFillHome className="links-svg" />Home</Link>
+                <Link to='about' className="inner-links" smooth={true} duration={1000}> <BsPersonLinesFill className="links-svg" /> About</Link>
+                <Link to='Projects' className="inner-links" smooth={true} duration={1000}> <AiFillProject className="links-svg" /> Projects</Link>
+                <Link to='contact' className="inner-links" smooth={true} duration={1000}> <RiContactsBookFill className="links-svg" /> Contact</Link>
             </div>
             <MobileNav />
         </div>

@@ -43,10 +43,13 @@
     }
 
     .sidebar-link{
-        padding: 15px;
-        color: #fff;
-        border-bottom: 1px solid #ccc;
         cursor: pointer;
+        .sidebar-inner-link{
+            color: #fff;
+            padding: 25px 15px;
+            border-bottom: 1px solid #ccc;
+
+        }
     }
     
 }
