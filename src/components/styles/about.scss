@@ -1,0 +1,199 @@
+.about{
+    padding: 5% 0;
+    margin: 40px 0px;
+    .about-me{
+        h2{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .about-desc{
+            p{
+                color: #fff;
+                text-align: justify;
+                font-size: 18px;
+                line-height: 1.5;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .skills{
+        margin: 10% 0;
+        h2{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .skills-desc{
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .skills-logo-react{
+                content: url("../../assets/images/React-icon.svg.png");
+                width: 150px;
+                margin: 7.5px;
+            }
+
+            .skills-logo-html{
+                content: url("../../assets/images/html-icon.svg");
+                width: 150px;
+                margin: 10px;
+            }
+
+            .skills-logo-css{
+                content: url("../../assets/images/css\ icon.png");
+                width: 150px;
+                margin: 10px;
+            }
+
+            .skills-logo-js{
+                content: url("../../assets/images/javascript\ icon.svg");
+                width: 150px;
+                margin: 10px;
+            }
+
+            .skills-logo-php{
+                content: url("../../assets/images/php\ icon\ 2.png");
+                width: 150px;
+                margin: 10px;
+            }
+
+            .skills-logo-mysql{
+                content: url("../../assets/images/mysql\ icon.png");
+                width: 150px;
+                margin: 10px;
+            }
+
+            .skills-logo-scss{
+                content: url("../../assets/images/scss\ logo.png");
+                width: 150px;
+                margin: 10px;
+            }
+
+            .skills-logo-bootstrap{
+                content: url("../../assets/images/bootstrap\ logo.jpg");
+                width: 150px;
+                margin: 10px;
+            }
+
+            .skills-logo-git{
+                content: url("../../assets/images/git\ logo.png");
+                width: 150px;
+                margin: 10px;
+            }
+        }
+    }
+
+    .about-experiences{
+        margin: 5% 0;
+        h2{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+        .work-experiences{
+            .experiences-box{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 5% 0;
+                .company-logo{
+                    content: url('../../assets/images/solution25.png');
+                    width: 300px;
+                    margin-right: 10px;
+                }
+                .company-logo1{
+                    content: url('../../assets/images/kosovaoutsource.jpg');
+                    width: 300px;
+                    margin-right: 10px;
+                }
+                .company-desc{
+                    color: #fff;
+                    p{
+                        font-size: 18px;
+                        line-height: 1.7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .about{
+        .about-me{
+            .about-desc{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 795px){
+    .about{
+        .skills{
+            .skills-desc{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .about-experiences{
+            h2{
+                font-size: 30px;
+                text-align: center;
+            }
+            .work-experiences{
+                .experiences-box{
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                  
+                    .company-desc{
+                        width: 75%;
+                        text-align: center;
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .about{
+        h2{
+            font-size: 27px;
+        }
+        padding: 0;
+        .skills{
+            margin: 10% 0;
+            h2{
+                font-size: 27px;
+            }
+        }    
+        .about-experiences{
+            h2{
+                font-size: 27px;
+                text-align: center;
+            }
+            .work-experiences{
+                .experiences-box{
+                    .company-desc{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

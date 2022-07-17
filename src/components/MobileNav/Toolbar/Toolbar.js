@@ -31,7 +31,7 @@ const Toolbar = (props) => {
                 </label>
                 <p>Dark Mode</p>
             </div>
-            <Link to='#' className="toolbar-logo"></Link>
+            <Link to='App' smooth={true} duration={2000} className="toolbar-logo"></Link>
             <button type="button" onClick={props.iconHandler}><AiOutlineMenu /></button>
         </div>
     )
