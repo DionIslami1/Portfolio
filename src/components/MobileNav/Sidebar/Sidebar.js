@@ -6,6 +6,8 @@ import { AiFillHome } from 'react-icons/ai'
 import { BsPersonLinesFill } from 'react-icons/bs'
 import { AiFillProject } from 'react-icons/ai'
 import { RiContactsBookFill } from 'react-icons/ri'
+import PDF from '../../../assets/pdf-files/1.1 Dion_Islami_Resume.pdf'
+import { ImProfile } from 'react-icons/im'
 
 const Sidebar = (props) => {
     return (
@@ -27,6 +29,9 @@ const Sidebar = (props) => {
             <Link className="sidebar-link" to='contact' smooth={true} duration={1000} onClick={props.close}>
                 <div className="sidebar-inner-link"><RiContactsBookFill /> Contacts</div>
             </Link>
+            <a href={PDF} target="_blank" rel="noreferrer" className="sidebar-link" to='contact' smooth={true} duration={1000} onClick={props.close}>
+                <div className="sidebar-inner-link"> <ImProfile /> Resume</div>
+            </a>
         </div>
     )
 }

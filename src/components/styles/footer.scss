@@ -1,0 +1,46 @@
+.footer{
+    text-align: center;
+    color: #fff;
+    background: #4d86cb;
+    border-radius: 10px;
+    padding: 10px;
+    
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size:25px;
+    }
+
+    .footer-icons{
+        .footer-icon{
+            font-size: 30px;
+            margin: 5px 10px;
+            svg{
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .footer{
+        h2{
+            font-size: 27px;
+        }
+
+        h3{
+            font-size: 22px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+        .footer-icons{
+            .footer-icon{
+                font-size: 27px;
+            }
+        }
+    }
+}

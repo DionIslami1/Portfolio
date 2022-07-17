@@ -68,8 +68,8 @@ function Projects() {
                     </div>
                 </div>
             </div>
+            <a href='https://github.com/DionIslami1?tab=repositories' className='check-more'> Check More</a>
         </div>
     )
 }
-
 export default Projects

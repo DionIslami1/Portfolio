@@ -24,13 +24,6 @@ const Toolbar = (props) => {
 
     return (
         <div className={clsx('mobile-toolbar', isSticky ? "header__sticky" : "")}>
-            <div className="toolbar-darkmode">
-                <label className="switch">
-                    <input type="checkbox" />
-                    <span className="slider round"></span>
-                </label>
-                <p>Dark Mode</p>
-            </div>
             <Link to='App' smooth={true} duration={2000} className="toolbar-logo"></Link>
             <button type="button" onClick={props.iconHandler}><AiOutlineMenu /></button>
         </div>

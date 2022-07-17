@@ -12,72 +12,12 @@
     box-sizing: border-box;
     z-index: 1000;
 
-    .navbar-darkmode{
+    .header-title{
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px;
+        font-size: 20px;
         color: #fff;
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-right: 10px;
-        }
-        
-        .switch input { 
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-        
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: #fff;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-        
-        input:checked + .slider {
-            background-color: #2196F3;
-        }
-        
-        input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
-        }
-        
-        input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-        }
-        
-        /* Rounded sliders */
-        .slider.round {
-            border-radius: 34px;
-        }
-        
-        .slider.round:before {
-            border-radius: 50%;
-        }
     }
 
     .navbar-logo{
@@ -114,19 +54,15 @@
 
 .header__sticky{
 
-    background: #0769c5;
+    background: #4d86cb;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
 
-@media (max-width: 1569px) {
+@media (max-width: 1575px) {
     .navbar{
         padding: 0 10%;
-    
-        .navbar-darkmode{
-            font-size: 18px;
-        }
         .links{
             .inner-links{
                 margin: 0 15px;
@@ -144,9 +80,6 @@
 @media (max-width: 1200px) {
     .navbar{
         padding: 0 7.5%;
-        .navbar-darkmode{
-            font-size: 17px;
-        }
         .links{
             .inner-links{
                 font-size: 17px;
@@ -160,7 +93,7 @@
 @media (max-width: 1000px){
    .navbar{
     height: 0;
-        .navbar-darkmode, .navbar-logo, .links {
+        .navbar-logo, .links {
             display: none;
         }
 

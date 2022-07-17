@@ -7,6 +7,8 @@ import { BsPersonLinesFill } from 'react-icons/bs'
 import { AiFillProject } from 'react-icons/ai'
 import { RiContactsBookFill } from 'react-icons/ri'
 import clsx from "clsx";
+import PDF from '../assets/pdf-files/1.1 Dion_Islami_Resume.pdf'
+import { ImProfile } from 'react-icons/im'
 
 export const ThemeContext = createContext(null);
 
@@ -33,22 +35,18 @@ function NavBar() {
         setTheme((curr) => (curr === "light" ? "dark" : "light"));
     };
 
+
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
             <div className={clsx('navbar', isSticky ? "header__sticky" : "")}>
-                <div className="navbar-darkmode">
-                    <label className="switch">
-                        <input type="checkbox" />
-                        <span className="slider round"></span>
-                    </label>
-                    <p>Dark Mode</p>
-                </div>
                 <Link to='App' className="navbar-logo" smooth={true} duration={2000} />
+
                 <div className="links">
                     <Link to='App' className="inner-links" smooth={true} duration={1000}> <AiFillHome className="links-svg" />Home</Link>
                     <Link to='about' className="inner-links" smooth={true} duration={1000}> <BsPersonLinesFill className="links-svg" /> About</Link>
                     <Link to='Projects' className="inner-links" smooth={true} duration={1000}> <AiFillProject className="links-svg" /> Projects</Link>
                     <Link to='contact' className="inner-links" smooth={true} duration={1000}> <RiContactsBookFill className="links-svg" /> Contact</Link>
+                    <a href={PDF} target="_blank" className="inner-links" rel="noreferrer" smooth={true} duration={1000}> <ImProfile className="links-svg" />Resume</a>
                 </div>
                 <MobileNav />
             </div>
