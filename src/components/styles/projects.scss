@@ -1,0 +1,102 @@
+.Projects{
+    color: #fff;
+    padding: 5% 0;
+
+    h2{
+            font-size: 30px;
+            text-align: center;
+    }
+
+    .Project-boxes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .box{
+            width: 25%;
+            margin: 2%;
+            border-radius: 10px;
+            padding: 15px;
+            background: #fff;
+            .box-title{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                svg{
+                    color: #586069;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 7.5px;
+                }
+                .rep-link{
+                    font-size: 15px;
+                    color: #0368D9;
+                    font-weight: bold;
+                }
+            }
+            p{
+                font-size: 13px;
+                color: #111;
+            }
+
+            .box-bottom{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                .box-circle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #F1E05A;
+                    border-radius: 50px;
+                    margin-right: 2.5px;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .Projects{
+        .Project-boxes{
+            .box{
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .Projects{
+
+        .Project-boxes{
+            .box{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .Projects{
+        h2{
+            font-size: 27px;
+        }
+    }
+}
+
+@media (max-width: 360px){
+    .Projects{
+        .Project-boxes{
+            .box{
+                width: 90%;
+            }
+        }
+    }
+}
