@@ -34,58 +34,9 @@
             justify-content: flex-start;
             flex-wrap: wrap;
 
-            .skills-logo-react{
-                content: url("../../assets/images/React-icon.svg.png");
+            .skills-logo{
                 width: 150px;
                 margin: 7.5px;
-            }
-
-            .skills-logo-html{
-                content: url("../../assets/images/html-icon.svg");
-                width: 150px;
-                margin: 10px;
-            }
-
-            .skills-logo-css{
-                content: url("../../assets/images/css\ icon.png");
-                width: 150px;
-                margin: 10px;
-            }
-
-            .skills-logo-js{
-                content: url("../../assets/images/javascript\ icon.svg");
-                width: 150px;
-                margin: 10px;
-            }
-
-            .skills-logo-php{
-                content: url("../../assets/images/php\ icon\ 2.png");
-                width: 150px;
-                margin: 10px;
-            }
-
-            .skills-logo-mysql{
-                content: url("../../assets/images/mysql\ icon.png");
-                width: 150px;
-                margin: 10px;
-            }
-
-            .skills-logo-scss{
-                content: url("../../assets/images/scss\ logo.png");
-                width: 150px;
-                margin: 10px;
-            }
-
-            .skills-logo-bootstrap{
-                content: url("../../assets/images/bootstrap\ logo.jpg");
-                width: 150px;
-                margin: 10px;
-            }
-
-            .skills-logo-git{
-                content: url("../../assets/images/git\ logo.png");
-                width: 150px;
-                margin: 10px;
             }
         }
     }
@@ -104,12 +55,6 @@
                 justify-content: flex-start;
                 margin: 5% 0;
                 .company-logo{
-                    content: url('../../assets/images/solution25.png');
-                    width: 300px;
-                    margin-right: 10px;
-                }
-                .company-logo1{
-                    content: url('../../assets/images/kosovaoutsource.jpg');
                     width: 300px;
                     margin-right: 10px;
                 }
